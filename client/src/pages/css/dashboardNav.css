@@ -1,0 +1,32 @@
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c1b45;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.nav-bar div {
+  margin: 0 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ecf0f1;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.active-nav {
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.inactive-nav {
+  background-color: transparent;
+  color: #bdc3c7;
+}
+.inactive-nav:hover {
+  background-color: #303059;
+  color: #ecf0f1;
+}

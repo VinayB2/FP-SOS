@@ -1,0 +1,24 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+.narrow {
+  margin-left: 250px;
+  transition: margin-left 0.3s ease;
+}
+.wide {
+  margin-left: 0px;
+  transition: margin-left 0.3s ease;
+}
+.sidebar-container {
+  background-color: #1c1b45;
+}
+
+.content-container {
+  flex: 1;
+  background-image: linear-gradient(#00000038, #00000080), url(./assets/BG2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

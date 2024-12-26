@@ -1,0 +1,87 @@
+.admin-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  color: #333;
+}
+
+.admin-heading {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.add-user-form {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  gap: 10px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px;
+  background-color: #7c96ff5b;
+  border-radius: 8px;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.input-field,
+.select-field {
+  padding: 10px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Table Styles */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  background-color: #cbdcff5b;
+  backdrop-filter: blur(3px);
+}
+
+.user-table th,
+.user-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #1c1b452c;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.user-table th {
+  color: white;
+  background-color: #5a67d8;
+}
+
+.delete-button {
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
