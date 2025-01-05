@@ -38,9 +38,9 @@ export const register = async (req, res, next) => {
 export const isAdminLoggedIn = async (req, res, next) => {
   try {
     const token = req.cookies.token;
-    if (!token) {
-      return res.status(401).json({ success: false, message: "Unauthorized" });
-    }
+    // if (!token) {
+    //   return res.status(401).json({ success: false, message: "Unauthorized" });
+    // }
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.userId = decoded.userId;
     const user = await User.findById(req.userId);
@@ -48,7 +48,7 @@ export const isAdminLoggedIn = async (req, res, next) => {
       return res.status(401).json({ message: "Unauthorized" });
     }
     if (user.role !== "admin") {
-      return res.status(401).json({ success: false, message: "Not an admin" });
+      return res.status(200).json({ success: false, message: "Not an admin" });
     }
     res.status(200).json({ success: true, message: "Admin is logged in" });
   } catch (error) {
