@@ -6,7 +6,8 @@ const WebSocketProvider = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:5000");
+    // const ws = new WebSocket("ws://localhost:5000");
+    const ws = new WebSocket("wss://fp-sos.onrender.com");
     ws.onopen = () => {
       console.log("WebSocket connection established");
     };

@@ -27,7 +27,8 @@ const Alerts = () => {
     fetchAlertedPoles();
   }, []);
   useEffect(() => {
-    const ws = new WebSocket("ws://localhost:5000");
+    // const ws = new WebSocket("ws://localhost:5000");
+    const ws = new WebSocket("wss://fp-sos.onrender.com");
     ws.onopen = () => {
       console.log("Connected to WebSocket");
     };

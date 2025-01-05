@@ -7,7 +7,8 @@ export default defineConfig({
   assetsInclude: ['**/*.jpg', '**/*.jpeg', '**/*.png', '**/*.gif', '**/*.mp4', '**/*.mjpeg'],
   server: {
     proxy: {
-      '/api': 'http://localhost:5000',
+      '/api': 'https://fp-sos.onrender.com',
+      // '/api': 'http://localhost:5000',
     },
   },
 })
