@@ -4,6 +4,13 @@
   animation: breathing-shadow 0.5s infinite;
 }
 
+.main-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 @keyframes breathing-shadow {
   0% { box-shadow: 0 0 5px #ff0000; }
   50% { box-shadow: 0 0 30px #ff0000; }
