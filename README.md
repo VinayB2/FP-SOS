@@ -1,7 +1,3 @@
-Here's a professional and detailed README file for your FP-SOS project:
-
----
-
 # FP-SOS: Smart Pole Surveillance and SOS Alert System
 
 ## Table of Contents
